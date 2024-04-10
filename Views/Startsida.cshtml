@@ -7,8 +7,8 @@
     Layout = "Master.cshtml";
 
 
-    var storiesPage = Model.DescendantOfType("aboutPage");
-    var contentStoriesPage = (ContentModels.AboutPage)storiesPage;
+    var storiesPage = Model.DescendantOfType("whoWeArePage");
+    var contentStoriesPage = (ContentModels.WhoWeArePage)storiesPage;
 
     // var storiesPage = Model.Children.FirstOrDefault(child => child.HasValue("aboutPage"));
     // var storiesContent = storiesPage.GetProperty("blocklistStory").Value();
@@ -17,7 +17,6 @@
 
 <!-- Hero -->
 <img src=@Model.ImageHero.GetCropUrl("hero") class="img-fluid hero-style" />
-
 
 <!-- Jumbotron, w title -->
 <div class="jumbotron text-center jumbotron-fluid">
@@ -45,6 +44,8 @@
         @foreach (var card in cards)
         {
             var content = (ContentModels.CompNewsCard)card.Content;
+
+
 
             <div class="col-md-4">
                 <div class="box-blog">
@@ -121,6 +122,4 @@
         </div>
     </div>
 </div>
-
-
 

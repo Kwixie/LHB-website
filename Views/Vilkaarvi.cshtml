@@ -1,0 +1,24 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.WhoWeArePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+
+@{
+	Layout = "Master.cshtml";
+}
+
+@Model.TextHeading
+
+
+
+
+
+@foreach (var story in Model.BlocklistStory)
+{
+    var contentStory = (ContentModels.CompStory)story.Content;
+    <div class="col-md-3">
+        <img src=@contentStory.Image.GetCropUrl("standard") class="img-fluid text-center mx-auto d-block" />
+        <h3>@contentStory.TextPresentation</h3>
+        <p>@contentStory.RteBody</p>
+    </div>
+}
