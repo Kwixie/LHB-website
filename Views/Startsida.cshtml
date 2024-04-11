@@ -76,8 +76,8 @@
         <div class="row section">
             <div class="col-md-8">
                 <h2>@Model.TextTitleAbout</h2>
-                <div>@Model.RteBodyAbout</div>
-                <a href="@Model.LinkBtnAbout.Url" class="btn btn-inverted" role="button">@Model.LinkBtnAbout.Name >></a>
+                <div class="rte">@Model.RteBodyAbout</div>
+                <a href="@Model.LinkBtnAbout.Url" class="btn btn-inverted mb-4" role="button">@Model.LinkBtnAbout.Name >></a>
             </div>
             <div class="col-md-4">
                 <img src=@Model.ImageAbout.GetCropUrl("standard") class="img-fluid text-center mx-auto d-block" />
@@ -116,8 +116,8 @@
     <div class="container">
         <div class="row section">
             <div class="col-md-12 text-center">
-                <h1>@Model.TextMember</h1>
-                <a href="@Model.LinkBtnMember.Url" class="btn btn-inverted" role="button">@Model.LinkBtnMember.Name >></a>
+                <h1 class="mb-4">@Model.TextMember</h1>
+                <a href="@Model.LinkBtnMember.Url" class="btn btn-secondary" role="button">@Model.LinkBtnMember.Name >></a>
             </div>
         </div>
     </div>
