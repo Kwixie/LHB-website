@@ -230,6 +230,18 @@ p a {
   }
 }
 
+/* ---------- WhoWeAre Page ---------- */
+
+.whoweare-page .container {
+    max-width: 750px;
+}
+
+.whoweare-page .heading {
+    max-width: 960px;
+}
+
+
+
 /* ---------- ContantPage ---------- */
 
 .sidebar-links {
