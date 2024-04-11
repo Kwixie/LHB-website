@@ -13,6 +13,19 @@
     color: white;
 }
 
+.rounded-img {
+    border-radius: 0 50% 50% 50%;
+    shape-outside: circle(50%);
+    float: left;
+    margin-right: 30px;
+    margin-top: 0px;
+    border: 10px solid var(--pink);
+}
+
+.rounded-pink-bg {
+    border-radius: 10px 10px 10px 0;
+}
+
 .nav-item-style {
   font-size: 15px;
   color: purple;
