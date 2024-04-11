@@ -92,7 +92,7 @@
     <div class="container">
         <div class="row section">
 
-            <h1 class="text-center">@Model.TextTitleStories</h1>
+            <h1 class="text-center mb-5">@Model.TextTitleStories</h1>
 
             @{
                 var stories = contentStoriesPage.Value<IEnumerable<BlockListItem>>("blocklistStory").Take(4);
@@ -102,7 +102,7 @@
             {
                 var contentStory = (ContentModels.CompStory)story.Content;
                 <div class="col-md-3">
-                    <img src=@contentStory.Image.GetCropUrl("standard") class="img-fluid text-center mx-auto d-block" />
+                    <img src=@contentStory.Image.GetCropUrl("standard") class="img-fluid text-center mx-auto d-block mb-4" />
                     <h3>@contentStory.TextPresentation</h3>
                     <p>@contentStory.TextTeaser</p>
                 </div>

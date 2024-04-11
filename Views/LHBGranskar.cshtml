@@ -4,3 +4,31 @@
 @{
 	Layout = "Master.cshtml";
 }
+
+<div class="container">
+    <div class="row section">
+        <div class="col-md-12">
+            <h1>@Model.TextHeading</h1>
+        </div>
+        <div class="col-md-12">
+            @foreach(var investigation in Model.BlockListInvestigations)
+            {
+                var item = (ContentModels.CompGranskning)investigation.Content;
+
+                <h3>@item.Title</h3>
+                <div>
+                    @item.RteBody
+                </div>
+                if (item.LinkSingle != null)
+                {
+                    <a href="@item.LinkSingle.Url
+                            " class="btn btn-inverted" role="button">
+                       
+                    @item.LinkSingle.Name
+                </a>
+                }
+            }
+
+        </div>
+    </div>
+</div>

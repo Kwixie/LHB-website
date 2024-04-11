@@ -8,6 +8,11 @@
 
 }
 
+main {
+    min-height: calc(100vh - 391px);
+    background-color: #f7eeff;
+} 
+
 .pink-bg {
     background-color: var(--pink);
     color: white;
@@ -155,13 +160,15 @@ p {
 /* ---------- MAIN CONTAINER ---------- */
 
 p a {
-  color: #3544b1;
+    color: #890fb0;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-p a:hover,
-p a:focus {
-  color: rgba(53, 68, 177, 0.8);
-}
+    p a:hover,
+    p a:focus {
+        color: #d377f1;
+    }
 
 .grey-bg {
   background-color: #f9f7f4;
@@ -338,8 +345,8 @@ div.teammember {
 /* ---------- FOOTER ---------- */
 
 .footer {
-  background-color: #000;
-  color: white;
+    background-color: #000;
+    color: white;
 }
 
 
