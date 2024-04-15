@@ -23,8 +23,14 @@ main {
     shape-outside: circle(50%);
     float: left;
     margin-right: 30px;
-    margin-top: 0px;
-    border: 10px solid var(--pink);
+    margin-top: -px;
+    /*border: 10px solid var(--pink);*/
+}
+
+@media (max-width: 500px) {
+    .rounded-img {
+        width: 40%;
+    }
 }
 
 .rounded-pink-bg {
@@ -255,8 +261,12 @@ p a {
 
 /* ---------- WhoWeAre Page ---------- */
 
-.whoweare-page .container {
-    max-width: 750px;
+.whoweare-page {
+    background-color: #f7eeff;
+}
+
+.whoweare-page .wrapper{
+    max-width: 770px;
 }
 
 .whoweare-page .heading {
@@ -274,6 +284,11 @@ p a {
     max-width: 770px;
 }
 
+/* ---------- Investigate page ---------- */
+
+.investigate-page {
+    background-color: #f7eeff;
+}
 
 /* ---------- ContantPage ---------- */
 
