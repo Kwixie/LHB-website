@@ -19,11 +19,11 @@ main {
 }
 
 .rounded-img {
-    border-radius: 0 50% 50% 50%;
+    /*border-radius: 0 50% 50% 50%;*/
     shape-outside: circle(50%);
     float: left;
     margin-right: 30px;
-    margin-top: -px;
+    margin-top: 0px;
     /*border: 10px solid var(--pink);*/
 }
 
