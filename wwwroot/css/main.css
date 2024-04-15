@@ -27,6 +27,12 @@ main {
     /*border: 10px solid var(--pink);*/
 }
 
+@media (max-width: 500px) {
+    .rounded-img {
+        width: 40%;
+    }
+}
+
 .rounded-pink-bg {
     border-radius: 10px 10px 10px 0;
 }
