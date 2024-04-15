@@ -23,8 +23,8 @@ main {
     shape-outside: circle(50%);
     float: left;
     margin-right: 30px;
-    margin-top: 0px;
-    border: 10px solid var(--pink);
+    margin-top: -px;
+    /*border: 10px solid var(--pink);*/
 }
 
 .rounded-pink-bg {
