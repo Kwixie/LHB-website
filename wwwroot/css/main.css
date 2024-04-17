@@ -31,6 +31,13 @@ main {
     .rounded-img {
         width: 40%;
     }
+    .nav-item-style:not(:last-child) {
+        border-bottom: solid 1px #876087;
+    }
+
+    .whoweare-page > * .rte {
+        margin-top: 0 !important;
+    }
 }
 
 .rounded-pink-bg {
